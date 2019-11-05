@@ -1,0 +1,2525 @@
+doctype html
+//
+  Author: W3layouts
+  Author URL: http://w3layouts.com
+  License: Creative Commons Attribution 3.0 Unported
+  License URL: http://creativecommons.org/licenses/by/3.0/
+html(lang='en')
+  head
+    title
+      | Smart Bazaar an E-commerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='keywords', content='Smart Bazaar Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, \
+    SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design')
+    script(type='application/x-javascript').
+      addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+      function hideURLbar(){ window.scrollTo(0,1); }
+    // Custom Theme files
+    link(href='stylesheets/bootstrap.css', rel='stylesheet', type='text/css', media='all')
+    link(href='stylesheets/style.css', rel='stylesheet', type='text/css', media='all')
+    link(href='stylesheets/menu.css', rel='stylesheet', type='text/css', media='all')
+    // menu style
+    link(href='stylesheets/ken-burns.css', rel='stylesheet', type='text/css', media='all')
+    // banner slider
+    link(href='stylesheets/animate.min.css', rel='stylesheet', type='text/css', media='all')
+    link(href='stylesheets/owl.carousel.css', rel='stylesheet', type='text/css', media='all')
+    // carousel slider
+    // //Custom Theme files
+    // font-awesome icons
+    link(href='stylesheets/font-awesome.css', rel='stylesheet')
+    // //font-awesome icons
+    // js
+    script(src='javascripts/jquery-2.2.3.min.js')
+    // //js
+    // web-fonts
+    link(href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Lovers+Quarrel', rel='stylesheet', type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Offside', rel='stylesheet', type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Tangerine:400,700', rel='stylesheet', type='text/css')
+    // web-fonts
+    script(src='javascripts/owl.carousel.js')
+    script.
+      $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items :4,
+      itemsDesktop : [640,5],
+      itemsDesktopSmall : [480,2],
+      navigation : true
+      });
+      });
+    script(src='javascripts/jquery-scrolltofixed-min.js', type='text/javascript')
+    script.
+      $(document).ready(function() {
+      // Dock the header to the top of the window when scrolled past the banner. This is the default behaviour.
+      $('.header-two').scrollToFixed();
+      // previous summary up the page.
+      var summaries = $('.summary');
+      summaries.each(function(i) {
+      var summary = $(summaries[i]);
+      var next = summaries[i + 1];
+      summary.scrollToFixed({
+      marginTop: $('.header-two').outerHeight(true) + 10,
+      zIndex: 999
+      });
+      });
+      });
+    // start-smooth-scrolling
+    script(type='text/javascript', src='javascripts/move-top.js')
+    script(type='text/javascript', src='javascripts/easing.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function($) {
+      $(".scroll").click(function(event){
+      event.preventDefault();
+      $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+      });
+      });
+    // //end-smooth-scrolling
+    // smooth-scrolling-of-move-up
+    script(type='text/javascript').
+      $(document).ready(function() {
+      var defaults = {
+      containerID: 'toTop', // fading element id
+      containerHoverID: 'toTopHover', // fading element hover id
+      scrollSpeed: 1200,
+      easingType: 'linear'
+      };
+      $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    // //smooth-scrolling-of-move-up
+    script(src='javascripts/bootstrap.js')
+  body
+    #myModal88.agileits-modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModal88', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+            h4#myModalLabel.modal-title
+              i.fa.fa-map-marker(aria-hidden='true')
+              |  Location
+          .modal-body.modal-body-sub
+            h5 Select your delivery location 
+            select.form-control.bfh-states(data-country='US', data-state='CA')
+              option(value='') Select Your location
+              option(value='AL') Alabama
+              option(value='AK') Alaska
+              option(value='AS') American Samoa
+              option(value='AZ') Arizona
+              option(value='AR') Arkansas
+              option(value='CA') California
+              option(value='CO') Colorado
+              option(value='CT') Connecticut
+              option(value='DE') Delaware
+              option(value='DC') District of Columbia
+              option(value='FM') Federated States Of Micronesia
+              option(value='FL') Florida
+              option(value='GA') Georgia
+              option(value='GU') Guam
+              option(value='HI') Hawaii
+              option(value='ID') Idaho
+              option(value='IL') Illinois
+              option(value='IN') Indiana
+              option(value='IA') Iowa
+              option(value='KS') Kansas
+              option(value='KY') Kentucky
+              option(value='LA') Louisiana
+              option(value='ME') Maine
+              option(value='MH') Marshall Islands
+              option(value='MD') Maryland
+              option(value='MA') Massachusetts
+              option(value='MI') Michigan
+              option(value='MN') Minnesota
+              option(value='MS') Mississippi
+              option(value='MO') Missouri
+              option(value='MT') Montana
+              option(value='NE') Nebraska
+              option(value='NV') Nevada
+              option(value='NH') New Hampshire
+              option(value='NJ') New Jersey
+              option(value='NM') New Mexico
+              option(value='NY') New York
+              option(value='NC') North Carolina
+              option(value='ND') North Dakota
+              option(value='MP') Northern Mariana Islands
+              option(value='OH') Ohio
+              option(value='OK') Oklahoma
+              option(value='OR') Oregon
+              option(value='PW') Palau
+              option(value='PA') Pennsylvania
+              option(value='PR') Puerto Rico
+              option(value='RI') Rhode Island
+              option(value='SC') South Carolina
+              option(value='SD') South Dakota
+              option(value='TN') Tennessee
+              option(value='TX') Texas
+              option(value='UT') Utah
+              option(value='VT') Vermont
+              option(value='VI') Virgin Islands
+              option(value='VA') Virginia
+              option(value='WA') Washington
+              option(value='WV') West Virginia
+              option(value='WI') Wisconsin
+              option(value='WY') Wyoming
+            input(type='text', name='Name', placeholder='Enter your area / Landmark / Pincode', required='')
+            button.close2(type='button', data-dismiss='modal', aria-hidden='true') Skip & Explore
+    script.
+      $('#myModal88').modal('show');
+    // header
+    .header
+      .w3ls-header
+        // header-one
+        .w3ls-header-left
+          p
+            a(href='#') UPTO $50 OFF ON LAPTOPS | USE COUPON CODE LAPPY 
+        .w3ls-header-right
+          ul
+            li.dropdown.head-dpdn
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-user(aria-hidden='true')
+                |  My Account
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='login.html') Login 
+                li
+                  a(href='signup.html') Sign Up
+                li
+                  a(href='login.html') My Orders
+                li
+                  a(href='login.html') Wallet
+            li.dropdown.head-dpdn
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-percent(aria-hidden='true')
+                |  Today's Deals
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='offers.html') Cash Back Offers
+                li
+                  a(href='offers.html') Product Discounts
+                li
+                  a(href='offers.html') Special Offers
+            li.dropdown.head-dpdn
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                i.fa.fa-gift(aria-hidden='true')
+                |  Gift Cards
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='offers.html') Product Gift card
+                li
+                  a(href='offers.html') Occasions Register
+                li
+                  a(href='offers.html') View Balance
+            li.dropdown.head-dpdn
+              a.dropdown-toggle(href='contact.html')
+                i.fa.fa-map-marker(aria-hidden='true')
+                |  Store Finder
+            li.dropdown.head-dpdn
+              a.dropdown-toggle(href='card.html')
+                i.fa.fa-credit-card-alt(aria-hidden='true')
+                |  Credit Card
+            li.dropdown.head-dpdn
+              a.dropdown-toggle(href='help.html')
+                i.fa.fa-question-circle(aria-hidden='true')
+                |  Help
+        .clearfix  
+      .header-two
+        // header-two
+        .container
+          .header-logo
+            h1
+              a(href='index.html')
+                span S
+                | mart 
+                i Bazaar
+            h6 Your stores. Your place.
+          .header-search
+            form(action='#', method='post')
+              input(type='search', name='Search', placeholder='Search for a Product...', required='')
+              button.btn.btn-default(type='submit', aria-label='Left Align')
+                i.fa.fa-search(aria-hidden='true')  
+          .header-cart
+            .my-account
+              a(href='contact.html')
+                i.fa.fa-map-marker(aria-hidden='true')
+                |  CONTACT US
+            .cart
+              form.last(action='#', method='post')
+                input(type='hidden', name='cmd', value='_cart')
+                input(type='hidden', name='display', value='1')
+                button.w3view-cart(type='submit', name='submit', value='')
+                  i.fa.fa-cart-arrow-down(aria-hidden='true')
+            .clearfix  
+          .clearfix  
+      // //header-two
+      .header-three
+        // header-three
+        .container
+          .menu
+            .cd-dropdown-wrapper
+              a.cd-dropdown-trigger(href='#0') Store Categories
+              nav.cd-dropdown
+                a.cd-close(href='#0') Close
+                ul.cd-dropdown-content
+                  li
+                    a(href='offers.html') Today's Offers
+                  li.has-children
+                    a(href='#') Electronics
+                    ul.cd-secondary-dropdown.is-hidden
+                      li.go-back
+                        a(href='#') Menu
+                      li.see-all
+                        a(href='products.html') All Electronics
+                      li.has-children
+                        a(href='#') MOBILE PHONES
+                        ul.is-hidden
+                          li.go-back
+                            a(href='#') All Electronics
+                          li.has-children
+                            a(href='#0') SmartPhones
+                            ul.is-hidden
+                              li.go-back
+                                a(href='#')  
+                              li
+                                a(href='products.html') Android
+                              li
+                                a(href='products.html') Windows
+                              li
+                                a(href='products.html') Black berry
+                          li
+                            a(href='products.html') IPhones
+                          li
+                            a(href='products.html') Tablets
+                          li
+                            a(href='products.html') IPad
+                          li
+                            a(href='products.html') Feature Phones
+                      li.has-children
+                        a(href='#') LARGE APPLIANCES
+                        ul.is-hidden
+                          li.go-back
+                            a(href='#') All Electronics 
+                          li
+                            a(href='products.html') Refrigerators
+                          li
+                            a(href='products.html') Washing Machine
+                          li
+                            a(href='products.html') Office Technology
+                          li
+                            a(href='products.html') Air conditioner
+                          li
+                            a(href='products.html') Home Automation
+                      li.has-children
+                        a(href='#') ENTERTAINMENT
+                        ul.is-hidden
+                          li.go-back
+                            a(href='#') All Electronics
+                          li
+                            a(href='products.html') Tv & Accessories
+                          li
+                            a(href='products.html') Digital Camera
+                          li
+                            a(href='products.html') Gaming
+                          li
+                            a(href='products.html') Home Audio & Theater
+                          li.has-children
+                            a(href='#') Computer
+                            ul.is-hidden
+                              li.go-back
+                                a(href='#')  
+                              li
+                                a(href='products.html') Laptop 
+                              li
+                                a(href='products.html') Gaming PC
+                              li
+                                a(href='products.html') Monitors
+                              li
+                                a(href='products.html') Networking
+                              li
+                                a(href='products.html') Printers & Supplies
+                              li
+                                a(href='products.html') Accessories
+                      li.has-children
+                        a(href='#') HOME APPLIANCES
+                        ul.is-hidden
+                          li.go-back
+                            a(href='#0') All Electronics 
+                          li.has-children
+                            a(href='#') Kitchen appliances
+                            ul.is-hidden
+                              li.go-back
+                                a(href='#0')  
+                              li
+                                a(href='products.html') Rice Cookers
+                              li
+                                a(href='products.html') Mixer Juicer
+                              li
+                                a(href='products.html') Grinder
+                              li
+                                a(href='products.html') Blenders & Choppers
+                              li
+                                a(href='products.html') Microwave Oven
+                              li
+                                a(href='products.html') Food Processors
+                          li
+                            a(href='products.html') Purifiers
+                          li
+                            a(href='products.html') Geysers
+                          li
+                            a(href='products.html') Gas Stove
+                          li
+                            a(href='products.html') Vacuum Cleaner
+                          li
+                            a(href='products.html') Sewing Machine
+                          li
+                            a(href='products.html') Heaters & Fans
+                      li.has-children
+                        a(href='#') SMALL DEVICES
+                        ul.is-hidden
+                          li.go-back
+                            a(href='#0') All Electronics 
+                          li
+                            a(href='products.html') Wifi Dongle
+                          li
+                            a(href='products.html') Router & Modem
+                          li.has-children
+                            a(href='#') Storage Devices
+                            ul.is-hidden
+                              li.go-back
+                                a(href='#0')  
+                              li
+                                a(href='products.html') Cloud Storage
+                              li
+                                a(href='products.html') Hard Disk
+                              li
+                                a(href='products.html') SSD
+                              li
+                                a(href='products.html') Pen Drive
+                              li
+                                a(href='products.html') Memory card
+                              li
+                                a(href='products.html') Security Devices
+                          li
+                            a(href='products.html') Office Supplies
+                          li
+                            a(href='products.html') Cut the Cable
+                          li
+                            a(href='products.html') Auto Electronics
+                      li.has-children
+                        a(href='#') PERSONAL CARE
+                        ul.is-hidden
+                          li.go-back
+                            a(href='#0') All Electronics 
+                          li
+                            a(href='products.html') Epilator
+                          li
+                            a(href='products.html') Hair Styler
+                          li
+                            a(href='products.html') Trimmer & Shaver
+                          li
+                            a(href='products.html') Health Care
+                          li
+                            a(href='products.html') cables
+                    // .cd-secondary-dropdown
+                    // .has-children
+                    li.has-children
+                      a(href='#') Fashion Store
+                      ul.cd-secondary-dropdown.is-hidden
+                        li.go-back
+                          a(href='#') Menu
+                        li.see-all
+                          a(href='products1.html') All Fashion Stores
+                        li.has-children
+                          a(href='#') GIRLS' CLOTHING
+                          ul.is-hidden
+                            li.go-back
+                              a(href='#') All Fashion Stores
+                            li
+                              a(href='products1.html') Ethnic wear 
+                            li
+                              a(href='products1.html') Maternity wear
+                            li
+                              a(href='products1.html') inner & nightwear 
+                            li
+                              a(href='products1.html') casual wear 
+                            li
+                              a(href='products1.html') formal wear
+                            li
+                              a(href='products1.html') Sports wear
+                        li.has-children
+                          a(href='#') BOYS' CLOTHING
+                          ul.is-hidden
+                            li.go-back
+                              a(href='#') All Fashion Stores
+                            li
+                              a(href='products1.html') Jeans
+                            li
+                              a(href='products1.html') Casual wear
+                            li
+                              a(href='products1.html') Shorts
+                            li
+                              a(href='products1.html') T-Shirts & Polos
+                            li
+                              a(href='products1.html') Trousers & Chinos
+                        li.has-children
+                          a(href='#') JACKETS
+                          ul.is-hidden
+                            li.go-back
+                              a(href='#') All Fashion Stores
+                            li
+                              a(href='products1.html') Blazers
+                            li
+                              a(href='products1.html') Bomber jackets
+                            li
+                              a(href='products1.html') Denim Jackets
+                            li
+                              a(href='products1.html') Duffle Coats
+                            li
+                              a(href='products1.html') Leather Jackets
+                            li
+                              a(href='products1.html') Parkas
+                        li.has-children
+                          a(href='#') ACCESSORIES 
+                          ul.is-hidden
+                            li.go-back
+                              a(href='#') All Fashion Stores
+                            li
+                              a(href='products1.html') Watches 
+                            li
+                              a(href='products1.html') Eyewear 
+                            li
+                              a(href='products1.html') Jewellery 
+                            li.has-children
+                              a(href='#') Footwear 
+                              ul.is-hidden
+                                li.go-back
+                                  a(href='#')  
+                                li
+                                  a(href='products1.html') Ethnic
+                                li
+                                  a(href='products1.html') Casual wear
+                                li
+                                  a(href='products1.html') Sports Shoes
+                                li
+                                  a(href='products1.html') Boots
+                            li
+                              a(href='products1.html') Stoles & Scarves
+                            li
+                              a(href='products1.html') Handbags
+                        li.has-children
+                          a(href='#') BEAUTY
+                          ul.is-hidden
+                            li.go-back
+                              a(href='#') All Fashion Stores
+                            li
+                              a(href='products1.html') Perfumes & Deos
+                            li
+                              a(href='products1.html') Lipsticks & Nail Polish
+                            li
+                              a(href='products1.html') Beauty Gift Hampers
+                            li
+                              a(href='products1.html') Personal Grooming
+                            li
+                              a(href='products1.html') Travel bags
+                        li.has-children
+                          a(href='products1.html') PERSONAL CARE
+                          ul.is-hidden
+                            li.go-back
+                              a(href='#') All Fashion Stores
+                            li
+                              a(href='products1.html') Face Care
+                            li
+                              a(href='products1.html') Nail Care
+                            li
+                              a(href='products1.html') Hair Care
+                            li
+                              a(href='products1.html') Body Care
+                            li
+                              a(href='products1.html') Bath & Spa
+                      // .cd-secondary-dropdown
+                      // .has-children
+                      li.has-children
+                        a(href='products2.html') Kids Fashion & Toys
+                        ul.cd-secondary-dropdown.is-hidden
+                          li.go-back
+                            a(href='#') Menu
+                          li.see-all
+                            a(href='products2.html') All Kids Fashions
+                          li.has-children
+                            a(href='products2.html') KIDS CLOTHING
+                            ul.is-hidden
+                              li.go-back
+                                a(href='#') All Kids Fashions
+                              li
+                                a(href='products2.html') Ethnic wear 
+                              li
+                                a(href='products2.html') inner & Sleepwear 
+                              li
+                                a(href='products2.html') Dresses & Frocks 
+                              li
+                                a(href='products2.html') Winter wear
+                              li
+                                a(href='products2.html') Diaper & Accessories
+                          li.has-children
+                            a(href='#') KIDS FASHION
+                            ul.is-hidden
+                              li.go-back
+                                a(href='#') All Kids Fashions
+                              li
+                                a(href='products2.html') Footwear
+                              li
+                                a(href='products2.html') Sunglasses 
+                              li
+                                a(href='products2.html') School & Stationery
+                              li
+                                a(href='products2.html') Jewellery
+                              li
+                                a(href='products2.html') Hair bands & Clips
+                          li.has-children
+                            a(href='#') Baby Care
+                            ul.is-hidden
+                              li.go-back
+                                a(href='#') All Kids Fashions
+                              li
+                                a(href='products2.html') Lotions, Oil & Powder 
+                              li
+                                a(href='products2.html') Soaps, Shampoo 
+                              li
+                                a(href='products2.html') Bath Towels
+                              li.has-children
+                                a(href='#') Feeding
+                                ul.is-hidden
+                                  li.go-back
+                                    a(href='#')  
+                                  li
+                                    a(href='products2.html') Baby Food 
+                                  li
+                                    a(href='products2.html') Bottle Feeding 
+                                  li
+                                    a(href='products2.html') Breast Feeding
+                              li
+                                a(href='products2.html') Toddlers' Rooms
+                            // .cd-secondary-dropdown
+                            // .has-children
+                            li.has-children
+                              a(href='#') TOYS & GAMES 
+                              ul.is-hidden
+                                li.go-back
+                                  a(href='#') All Kids Fashions
+                                li
+                                  a(href='products2.html') Art & Crafts
+                                li
+                                  a(href='products2.html') Educational Toys 
+                                li
+                                  a(href='products2.html') Baby Toys
+                                li
+                                  a(href='products2.html') Outdoor Play 
+                                li
+                                  a(href='products2.html') Musical Instruments
+                            li
+                              ul.is-hidden
+                                li.go-back
+                                  a(href='#') All Kids Fashions
+                                li
+                                  a(href='products2.html') Toy Tips & Trends
+                                li
+                                  a(href='products2.html') Preschool Toys
+                                li
+                                  a(href='products2.html') Musical Instruments
+                                li
+                                  a(href='products2.html') Bikes & Ride-Ons
+                                li
+                                  a(href='products2.html') Video Games
+                                li
+                                  a(href='products2.html') PC & Digital Gaming
+                        // .cd-secondary-dropdown
+                        // .has-children
+                        li.has-children
+                          a(href='#') Home, Furniture & Patio
+                          ul.cd-secondary-dropdown.is-hidden
+                            li.go-back
+                              a(href='#') Menu
+                            li.see-all
+                              a(href='products3.html') All Products
+                            li.has-children
+                              a(href='#') Kitchen Uses
+                              ul.is-hidden
+                                li.go-back
+                                  a(href='#')
+                                li
+                                  a(href='products3.html') Dinner Sets 
+                                li
+                                  a(href='products3.html') Cookware & Bakeware 
+                                li
+                                  a(href='products3.html') Containers & Jars 
+                                li
+                                  a(href='products3.html') Kitchen Tools 
+                                li
+                                  a(href='products3.html') Food Storage
+                                li
+                                  a(href='products3.html') Casseroles
+                            li.has-children
+                              a(href='#') Furniture 
+                              ul.is-hidden
+                                li.go-back
+                                  a(href='#')
+                                li
+                                  a(href='products3.html') Bedroom 
+                                li
+                                  a(href='products3.html') Dining Room 
+                                li
+                                  a(href='products3.html') Kids' Furniture 
+                                li
+                                  a(href='products3.html') Living Room
+                                li
+                                  a(href='products3.html') Office
+                                li
+                                  a(href='products3.html') Mattresses
+                            li.has-children
+                              a(href='#') Home Decor 
+                              ul.is-hidden
+                                li.go-back
+                                  a(href='#')
+                                li
+                                  a(href='products3.html') Lighting
+                                li
+                                  a(href='products3.html') Painting
+                                li
+                                  a(href='products3.html') Curtains & Blinds
+                                li
+                                  a(href='products3.html') Patio Furniture
+                                li
+                                  a(href='products3.html') Wardrobes & Cabinets
+                                li
+                                  a(href='products3.html') Mattresses
+                            li.has-children
+                              a(href='#') Gardening & Lawn 
+                              ul.is-hidden
+                                li.go-back
+                                  a(href='#')  
+                                li
+                                  a(href='products3.html') Gardening 
+                                li
+                                  a(href='products3.html') Landscaping 
+                                li
+                                  a(href='products3.html') Sheds
+                                li
+                                  a(href='products3.html') Outdoor Storage  
+                                li
+                                  a(href='products3.html') Garden & Ideas 
+                                li
+                                  a(href='products3.html') Patio Tips
+                            li.has-children
+                              a(href='#') Garage Storage
+                              ul.is-hidden
+                                li.go-back
+                                  a(href='#')
+                                li
+                                  a(href='products3.html') Baskets & Bins 
+                                li
+                                  a(href='products3.html') Garage Door Openers
+                                li
+                                  a(href='products3.html') Free Standing Shelves 
+                                li
+                                  a(href='products3.html') Floor cleaning
+                                li
+                                  a(href='products3.html') Tool Kits
+                          // .cd-secondary-dropdown
+                          // .has-children
+                          li.has-children
+                            a(href='#') Sports, Fitness & Outdoor
+                            ul.cd-secondary-dropdown.is-hidden
+                              li.go-back
+                                a(href='#') Menu
+                              li.see-all
+                                a(href='products4.html') All Products
+                              li.has-children
+                                a(href='#') Single Sports 
+                                ul.is-hidden
+                                  li.go-back
+                                    a(href='#')
+                                  li
+                                    a(href='products4.html') Bikes 
+                                  li
+                                    a(href='products4.html') Fishing  
+                                  li
+                                    a(href='products4.html') Cycling 
+                                  li
+                                    a(href='products4.html') Musical Instruments
+                                  li
+                                    a(href='products4.html') Archery 
+                              li.has-children
+                                a(href='#') Team Sports
+                                ul.is-hidden
+                                  li.go-back
+                                    a(href='#')
+                                  li
+                                    a(href='products4.html') Cricket 
+                                  li
+                                    a(href='products4.html') Badminton 
+                                  li
+                                    a(href='products4.html') Swimming Gear 
+                                  li
+                                    a(href='products4.html') Sports Apparel 
+                                  li
+                                    a(href='products4.html') Indoor games
+                              li.has-children
+                                a(href='#') Fitness 
+                                ul.is-hidden
+                                  li.go-back
+                                    a(href='#')
+                                  li
+                                    a(href='products4.html') Fitness Accessories 
+                                  li
+                                    a(href='products4.html') Exercise Machines 
+                                  li
+                                    a(href='products4.html') Ellipticals 
+                                  li
+                                    a(href='products4.html') Home Gyms
+                                  li
+                                    a(href='products4.html') Exercise Bikes
+                              li.has-children
+                                a(href='#') Camping 
+                                ul.is-hidden
+                                  li.go-back
+                                    a(href='#')
+                                  li
+                                    a(href='products4.html')  Airbeds
+                                  li
+                                    a(href='products4.html') Tents 
+                                  li
+                                    a(href='products4.html') Gazebo's & Shelters
+                                  li
+                                    a(href='products4.html') Coolers 
+                                  li
+                                    a(href='products4.html') Canopies
+                                  li
+                                    a(href='products4.html') Sleeping Bags
+                              li.has-children
+                                a(href='#') Camping Tools
+                                ul.is-hidden
+                                  li.go-back
+                                    a(href='#')
+                                  li
+                                    a(href='products4.html') Shooting 
+                                  li
+                                    a(href='products4.html') Knives & Tools 
+                                  li
+                                    a(href='products4.html') Optics & Binoculars 
+                                  li
+                                    a(href='products4.html') Lights & Lanterns 
+                                  li
+                                    a(href='products4.html') Hunting Clothing 
+                              li.has-children
+                                a(href='#') Other
+                                ul.is-hidden
+                                  li.go-back
+                                    a(href='#')
+                                  li
+                                    a(href='products4.html') Riding Gears & More 
+                                  li
+                                    a(href='products4.html') Body Massagers 
+                                  li
+                                    a(href='products4.html') Health Monitors 
+                                  li
+                                    a(href='products4.html') Health Drinks 
+                            // .cd-secondary-dropdown
+                            // .has-children
+                            li.has-children
+                              a(href='#') Grocery store
+                              ul.cd-secondary-dropdown.is-hidden
+                                li.go-back
+                                  a(href='#') Menu
+                                li.see-all
+                                  a(href='products5.html') All Products
+                                li.has-children
+                                  a(href='#') Veggies & Fruits 
+                                  ul.is-hidden
+                                    li.go-back
+                                      a(href='#')
+                                    li
+                                      a(href='products5.html') Vegetables 
+                                    li
+                                      a(href='products5.html') Fruits 
+                                    li
+                                      a(href='products5.html') Dry Fruits
+                                    li
+                                      a(href='products5.html') Snacks & Cookies 
+                                    li
+                                      a(href='products5.html') Breakfast & Cereal
+                                li.has-children
+                                  a(href='#') Packet Food
+                                  ul.is-hidden
+                                    li.go-back
+                                      a(href='#')
+                                    li
+                                      a(href='products5.html') Beverages 
+                                    li
+                                      a(href='products5.html') Baking 
+                                    li
+                                      a(href='products5.html') Emergency Food 
+                                    li
+                                      a(href='products5.html') Candy & Gum 
+                                    li
+                                      a(href='products5.html') Meals & Pasta 
+                                li.has-children
+                                  a(href='#') Shop All Pets 
+                                  ul.is-hidden
+                                    li.go-back
+                                      a(href='#')
+                                    li
+                                      a(href='products5.html') Dogs 
+                                    li
+                                      a(href='products5.html') Fish 
+                                    li
+                                      a(href='products5.html') Cats
+                                    li
+                                      a(href='products5.html') Birds 
+                                    li
+                                      a(href='products5.html') Pet Food 
+                                li.has-children
+                                  a(href='#') Household Essentials 
+                                  ul.is-hidden
+                                    li.go-back
+                                      a(href='#')
+                                    li
+                                      a(href='products5.html') Laundry Room 
+                                    li
+                                      a(href='products5.html') Paper & Plastic
+                                    li
+                                      a(href='products5.html') Pest Control 
+                                    li
+                                      a(href='products5.html') Batteries 
+                                li.has-children
+                                  a(href='#') Food Shops 
+                                  ul.is-hidden
+                                    li.go-back
+                                      a(href='#')
+                                    li
+                                      a(href='products5.html') Fresh Food
+                                    li
+                                      a(href='products5.html') Food Gifts 
+                                    li
+                                      a(href='products5.html') Frozen Food 
+                                    li
+                                      a(href='products5.html') Organic 
+                                    li
+                                      a(href='products5.html') Gluten Free 
+                                li.has-children
+                                  a(href='#') Tips 
+                                  ul.is-hidden
+                                    li.go-back
+                                      a(href='#')
+                                    li
+                                      a(href='products5.html') Pets Growth
+                                    li
+                                      a(href='products5.html') Recipes 
+                                    li
+                                      a(href='products5.html') Snacks
+                                    li
+                                      a(href='products5.html') Nutrition
+                              // .cd-secondary-dropdown
+                              // .has-children
+                              li.has-children
+                                a(href='#') Photo, Gifts & Office Supplies
+                                ul.cd-secondary-dropdown.is-hidden
+                                  li.go-back
+                                    a(href='#') Menu
+                                  li.see-all
+                                    a(href='products6.html') All Products
+                                  li.has-children
+                                    a(href='#') Trending Now 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products6.html') Best Priced
+                                      li
+                                        a(href='products6.html') Chocolates 
+                                      li
+                                        a(href='products6.html') Gift Cards 
+                                      li
+                                        a(href='products6.html') Fashion & Accessories 
+                                      li
+                                        a(href='products6.html') Decorative Plants 
+                                  li.has-children
+                                    a(href='#') Photos 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products6.html') Shelf animation 
+                                      li
+                                        a(href='products6.html') 3D-rendered 
+                                      li
+                                        a(href='products6.html') gift builder 
+                                      li
+                                        a(href='products6.html') Frames
+                                      li
+                                        a(href='products6.html') Wall Decor
+                                  li.has-children
+                                    a(href='#') Gifts 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products6.html') Personalized Gifts 
+                                      li
+                                        a(href='products6.html') Flowers 
+                                      li
+                                        a(href='products6.html') Cards & Toys
+                                      li
+                                        a(href='products6.html') Show pieces 
+                                      li
+                                        a(href='products6.html') Photo Books
+                                  li.has-children
+                                    a(href='#') Favourite Brands 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products6.html') Archies 
+                                      li
+                                        a(href='products6.html') Jewel Fuel 
+                                      li
+                                        a(href='products6.html') Ferns N Petals 
+                                      li
+                                        a(href='products6.html') Happily Unmarried
+                                      li
+                                        a(href='products6.html') Chumbak
+                                  li.has-children
+                                    a(href='#') Office
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products6.html') Calendars
+                                      li
+                                        a(href='products6.html') Mousepads
+                                      li
+                                        a(href='products6.html') Phone Cases
+                                      li
+                                        a(href='products6.html') Tablet & Laptop Cases
+                                      li
+                                        a(href='products6.html') Mounted Photos
+                                  li.has-children
+                                    a(href='#') Combos 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products6.html') Chocolates 
+                                      li
+                                        a(href='products6.html') Dry Fruits
+                                      li
+                                        a(href='products6.html') Sweets
+                                      li
+                                        a(href='products6.html') Snacks
+                                      li
+                                        a(href='products6.html') Cakes
+                                // .cd-secondary-dropdown
+                              li.has-children
+                                a(href='#') Health, Beauty & Pharmacy
+                                ul.cd-secondary-dropdown.is-hidden
+                                  li.go-back
+                                    a(href='#') Menu
+                                  li.see-all
+                                    a(href='products7.html') All Products
+                                  li.has-children
+                                    a(href='#') Health
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products7.html') Home Health Care 
+                                      li
+                                        a(href='products7.html') Sports Nutrition 
+                                      li
+                                        a(href='products7.html') Vision 
+                                      li
+                                        a(href='products7.html') Vitamins 
+                                      li
+                                        a(href='products7.html') Diet & Nutrition 
+                                  li.has-children
+                                    a(href='#') Health Tips
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products7.html') Diet
+                                      li
+                                        a(href='products7.html') Exercise Tips  
+                                      li
+                                        a(href='products7.html') Vitamin Balance
+                                      li
+                                        a(href='products7.html') Health Insurance
+                                      li
+                                        a(href='products7.html') Funeral
+                                  li.has-children
+                                    a(href='#') Beauty 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products7.html') Massage & Spa 
+                                      li
+                                        a(href='products7.html') Face Wash
+                                      li
+                                        a(href='products7.html') Facial Cleanser
+                                      li
+                                        a(href='products7.html') Makeup 
+                                      li
+                                        a(href='products7.html') Beauty Tips
+                                  li.has-children
+                                    a(href='#') Pharmacy 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products7.html') Home Delivery 
+                                      li
+                                        a(href='products7.html') History & Reports 
+                                      li
+                                        a(href='products7.html') Transfer Prescriptions 
+                                      li
+                                        a(href='products7.html') Health CheckUp
+                                      li
+                                        a(href='products7.html') Mobile App
+                                  li.has-children
+                                    a(href='#') Pharmacy Center 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products7.html') Diabetes Shop 
+                                      li
+                                        a(href='products7.html') Medicine Cabinet 
+                                      li
+                                        a(href='products7.html') Vitamin Selector
+                                      li
+                                        a(href='products7.html') Pharmacy Help
+                                // .cd-secondary-dropdown
+                              li.has-children
+                                a(href='#') Automotive
+                                ul.cd-secondary-dropdown.is-hidden
+                                  li.go-back
+                                    a(href='#') Menu
+                                  li.see-all
+                                    a(href='products8.html') All Products
+                                  li.has-children
+                                    a(href='#') All Motors 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products8.html') Bikes 
+                                      li
+                                        a(href='products8.html') Yachts 
+                                      li
+                                        a(href='products8.html') Scooters 
+                                      li
+                                        a(href='products8.html') Autos
+                                      li
+                                        a(href='products8.html') Bus
+                                  li.has-children
+                                    a(href='#') Accessories 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products8.html') Vehicle Electronics
+                                      li
+                                        a(href='products8.html') Stereos & Monitors
+                                      li
+                                        a(href='products8.html') Bluetooth Devices
+                                      li
+                                        a(href='products8.html') GPS Navigation
+                                      li
+                                        a(href='products8.html') Speakers & Tweeters
+                                  li.has-children
+                                    a(href='#') Safety & Security 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products8.html') Anti-Theft Devices 
+                                      li
+                                        a(href='products8.html') Helmets
+                                      li
+                                        a(href='products8.html') Sensors
+                                      li
+                                        a(href='products8.html') Auto Repair Tools 
+                                      li
+                                        a(href='products8.html') Antifreeze & Coolants 
+                                  li.has-children
+                                    a(href='#') Car Interiors
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products8.html') Stereos 
+                                      li
+                                        a(href='products8.html') Floor Mats 
+                                      li
+                                        a(href='products8.html') Seat Covers
+                                      li
+                                        a(href='products8.html') Chargers 
+                                      li
+                                        a(href='products8.html') Audio Finder 
+                                  li.has-children
+                                    a(href='#') Exterior Accessories 
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products8.html') Wheel covers 
+                                      li
+                                        a(href='products8.html') Car Lighting 
+                                      li
+                                        a(href='products8.html') Polish & Waxes
+                                      li
+                                        a(href='products8.html') Cargo Management
+                                      li
+                                        a(href='products8.html') Car Decoration 
+                                  li.has-children
+                                    a(href='#') Car Care
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products8.html') Auto Tips & Advice 
+                                      li
+                                        a(href='products8.html') Car Washes & Cleaners 
+                                      li
+                                        a(href='products8.html') Car Wax & Polish
+                                      li
+                                        a(href='products8.html') Cleaning Tools
+                                      li
+                                        a(href='products8.html') Detailing Kits 
+                                // .cd-secondary-dropdown
+                              li.has-children
+                                a(href='#') Books, Music & Movies
+                                ul.cd-secondary-dropdown.is-hidden
+                                  li.go-back
+                                    a(href='#') Menu
+                                  li.see-all
+                                    a(href='products9.html') All Products
+                                  li.has-children
+                                    a(href='#') Books
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li.has-children
+                                        a(href='#') Exam books 
+                                        ul.is-hidden
+                                          li.go-back
+                                            a(href='#')  
+                                          li
+                                            a(href='products9.html') CAT/MAT/XAT
+                                          li
+                                            a(href='products9.html') Civil Services
+                                          li
+                                            a(href='products9.html') AFCAT
+                                          li
+                                            a(href='products9.html') New Releases
+                                      li
+                                        a(href='products9.html') Academic Text 
+                                      li
+                                        a(href='products9.html') Romance Books 
+                                      li
+                                        a(href='products9.html') Journals 
+                                      li
+                                        a(href='products9.html') Children's & Teen Books 
+                                  li.has-children
+                                    a(href='#') Music
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products9.html') New Releases 
+                                      li
+                                        a(href='products9.html') Country Music 
+                                      li
+                                        a(href='products9.html') Musical Instruments 
+                                      li
+                                        a(href='products9.html') Collections
+                                      li
+                                        a(href='products9.html') Boxed Sets 
+                                  li.has-children
+                                    a(href='#') Music Combo
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products9.html') Pop 
+                                      li
+                                        a(href='products9.html') Preorders 
+                                      li
+                                        a(href='products9.html') Album Songs
+                                      li
+                                        a(href='products9.html') Top 50 CDs 
+                                      li
+                                        a(href='products9.html') Music DVDs 
+                                  li.has-children
+                                    a(href='#') Movies
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products9.html') New Releases 
+                                      li
+                                        a(href='products9.html') Children & Family 
+                                      li
+                                        a(href='products9.html') Action
+                                      li
+                                        a(href='products9.html') Classic Movies 
+                                      li
+                                        a(href='products9.html') Bollywood Movies 
+                                  li.has-children
+                                    a(href='#') Movies Combo
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products9.html') Hollywood Movies 
+                                      li
+                                        a(href='products9.html') Digital Movies 
+                                      li
+                                        a(href='products9.html') Boxed Sets
+                                      li
+                                        a(href='products9.html') Animated
+                                      li
+                                        a(href='products9.html') Adventure
+                                  li.has-children
+                                    a(href='#') TV Shows
+                                    ul.is-hidden
+                                      li.go-back
+                                        a(href='#')
+                                      li
+                                        a(href='products9.html') Serials
+                                      li
+                                        a(href='products9.html') Best Programs
+                                      li
+                                        a(href='products9.html') Celebrations
+                                      li
+                                        a(href='products9.html') Top Shows
+                                // .cd-secondary-dropdown
+                              li
+                                a(href='sitemap.html') Full Site Directory 
+                // .cd-dropdown-content
+                // .cd-dropdown
+                // .cd-dropdown-wrapper
+          .move-text
+            .marquee
+              a(href='offers.html')
+                | New collections are available here...... 
+                span Get extra 10% off on everything | no extra taxes 
+                span  Try shipping pass free for 15 days with unlimited
+            script(type='text/javascript', src='javascripts/jquery.marquee.min.js')
+            script.
+              $('.marquee').marquee({ pauseOnHover: true });
+              //# sourceURL=pen.js
+              // //header
+              // banner
+              .banner
+                #kb.carousel.kb_elastic.animate_text.kb_wrapper(data-ride='carousel', data-interval='6000', data-pause='hover')
+                  // Wrapper-for-Slides
+                  .carousel-inner(role='listbox')
+                    .item.active
+                      // First-Slide
+                      img.img-responsive(src='images/5.jpg', alt='')
+                      .carousel-caption.kb_caption.kb_caption_right
+                        h3(data-animation='animated flipInX')
+                          | Flat 
+                          span 50%
+                          |  Discount
+                        h4(data-animation='animated flipInX') Hot Offer Today Only
+                    .item
+                      // Second-Slide
+                      img.img-responsive(src='images/8.jpg', alt='')
+                      .carousel-caption.kb_caption.kb_caption_right
+                        h3(data-animation='animated fadeInDown') Our Latest Fashion Editorials
+                        h4(data-animation='animated fadeInUp') cupidatat non proident
+                    .item
+                      // Third-Slide
+                      img.img-responsive(src='images/3.jpg', alt='')
+                      .carousel-caption.kb_caption.kb_caption_center
+                        h3(data-animation='animated fadeInLeft') End Of Season Sale
+                        h4(data-animation='animated flipInX') cupidatat non proident
+                  // Left-Button
+                  a.left.carousel-control.kb_control_left(href='#kb', role='button', data-slide='prev')
+                    span.fa.fa-angle-left.kb_icons(aria-hidden='true')
+                    span.sr-only Previous
+                  // Right-Button
+                  a.right.carousel-control.kb_control_right(href='#kb', role='button', data-slide='next')
+                    span.fa.fa-angle-right.kb_icons(aria-hidden='true')
+                    span.sr-only Next
+                script(src='javascripts/custom.js')
+              // //banner
+              // welcome
+              .welcome
+                .container
+                  .welcome-info
+                    .bs-example.bs-example-tabs(role='tabpanel', data-example-id='togglable-tabs')
+                      ul#myTab.nav-tabs(role='tablist')
+                        li.active(role='presentation')
+                          a#home-tab(href='#home', role='tab', data-toggle='tab')
+                            i.fa.fa-laptop(aria-hidden='true')
+                            h5 Electronics
+                        li(role='presentation')
+                          a#carl-tab(href='#carl', role='tab', data-toggle='tab')
+                            i.fa.fa-female(aria-hidden='true')
+                            h5 Fashion
+                        li(role='presentation')
+                          a#james-tab(href='#james', role='tab', data-toggle='tab')
+                            i.fa.fa-gift(aria-hidden='true')
+                            h5 Photo & Gifts
+                        li(role='presentation')
+                          a#decor-tab(href='#decor', role='tab', data-toggle='tab')
+                            i.fa.fa-home(aria-hidden='true')
+                            h5 Home Decor
+                        li(role='presentation')
+                          a#sports-tab(href='#sports', role='tab', data-toggle='tab')
+                            i.fa.fa-motorcycle(aria-hidden='true')
+                            h5 Sports
+                      .clearfix  
+                      h3.w3ls-title Featured Products
+                      #myTabContent.tab-content
+                        #home.tab-pane.fade.in.active(role='tabpanel', aria-labelledby='home-tab')
+                          .tabcontent-grids
+                            #owl-demo.owl-carousel
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products.html')
+                                    img(src='images/e1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products.html') Audio speaker
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $100
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Audio speaker')
+                                      input(type='hidden', name='amount', value='100.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 Sale
+                                  a(href='products.html')
+                                    img(src='images/e2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products.html') Refrigerator
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $300
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Refrigerator')
+                                      input(type='hidden', name='amount', value='300.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 New
+                                  a(href='products.html')
+                                    img(src='images/e3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products.html') Smart Phone
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $70
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Smart Phone')
+                                      input(type='hidden', name='amount', value='70.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products.html')
+                                    img(src='images/e4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products.html') Digital Camera
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $80
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Digital Camera')
+                                      input(type='hidden', name='amount', value='80.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products.html')
+                                    img(src='images/e1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products.html') Audio speaker
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $100
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Audio speaker')
+                                      input(type='hidden', name='amount', value='100.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 Sale
+                                  a(href='products.html')
+                                    img(src='images/e2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products.html') Refrigerator
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $300
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Refrigerator')
+                                      input(type='hidden', name='amount', value='300.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 New
+                                  a(href='products.html')
+                                    img(src='images/e3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products.html') Smart Phone
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $70
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Smart Phone')
+                                      input(type='hidden', name='amount', value='70.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products.html')
+                                    img(src='images/e4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products.html') Digital Camera
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $80
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Digital Camera')
+                                      input(type='hidden', name='amount', value='80.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                        #carl.tab-pane.fade(role='tabpanel', aria-labelledby='carl-tab')
+                          .tabcontent-grids
+                            script.
+                              $(document).ready(function() {
+                              $("#owl-demo1").owlCarousel({
+                              autoPlay: 3000, //Set AutoPlay to 3 seconds
+                              items :4,
+                              itemsDesktop : [640,5],
+                              itemsDesktopSmall : [414,4],
+                              navigation : true
+                              });
+                              });
+                            #owl-demo1.owl-carousel
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products1.html')
+                                    img(src='images/f1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products1.html') T Shirt
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $10
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='T Shirt')
+                                      input(type='hidden', name='amount', value='10.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6
+                                      | 20% 
+                                      br
+                                      |  Off
+                                  a(href='products1.html')
+                                    img(src='images/f2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products1.html') Women Sandal
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $20
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Women Sandal')
+                                      input(type='hidden', name='amount', value='20.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products1.html')
+                                    img(src='images/f3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products1.html') Jewellery
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $60
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Jewellery')
+                                      input(type='hidden', name='amount', value='60.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 New
+                                  a(href='products1.html')
+                                    img(src='images/f4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products1.html') Party dress
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $15
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Party dress')
+                                      input(type='hidden', name='amount', value='15.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products1.html')
+                                    img(src='images/f1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products1.html') T Shirt
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $10
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='T Shirt')
+                                      input(type='hidden', name='amount', value='10.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6
+                                      | 20% 
+                                      br
+                                      |  Off
+                                  a(href='products1.html')
+                                    img(src='images/f2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products1.html') Women Sandal
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $20
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Women Sandal')
+                                      input(type='hidden', name='amount', value='20.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products1.html')
+                                    img(src='images/f3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products1.html') Jewellery
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $60
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Jewellery')
+                                      input(type='hidden', name='amount', value='60.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 New
+                                  a(href='products1.html')
+                                    img(src='images/f4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products1.html') Party dress
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $15
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Party dress')
+                                      input(type='hidden', name='amount', value='15.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                        #james.tab-pane.fade(role='tabpanel', aria-labelledby='james-tab')
+                          .tabcontent-grids
+                            script.
+                              $(document).ready(function() {
+                              $("#owl-demo2").owlCarousel({
+                              autoPlay: 3000, //Set AutoPlay to 3 seconds
+                              items :4,
+                              itemsDesktop : [640,5],
+                              itemsDesktopSmall : [414,4],
+                              navigation : true
+                              });
+                              });
+                            #owl-demo2.owl-carousel
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 New
+                                  a(href='products6.html')
+                                    img(src='images/p1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products6.html') Coffee Mug
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $14
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Coffee Mug')
+                                      input(type='hidden', name='amount', value='14.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6
+                                      | 20% 
+                                      br
+                                      |  Off
+                                  a(href='products6.html')
+                                    img(src='images/p2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products6.html') Teddy bear
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $20
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Teddy bear')
+                                      input(type='hidden', name='amount', value='20.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 Sale
+                                  a(href='products6.html')
+                                    img(src='images/p3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products6.html') Chocolates
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $60
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Chocolates')
+                                      input(type='hidden', name='amount', value='60.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products6.html')
+                                    img(src='images/p4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products6.html') Gift Card
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $22
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Gift Card')
+                                      input(type='hidden', name='amount', value='22.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 New
+                                  a(href='products6.html')
+                                    img(src='images/p1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products6.html') Coffee Mug
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $14
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Coffee Mug')
+                                      input(type='hidden', name='amount', value='14.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6
+                                      | 20% 
+                                      br
+                                      |  Off
+                                  a(href='products6.html')
+                                    img(src='images/p2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products6.html') Teddy bear
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $20
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Teddy bear')
+                                      input(type='hidden', name='amount', value='20.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 Sale
+                                  a(href='products6.html')
+                                    img(src='images/p3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products6.html') Chocolates
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $60
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Chocolates')
+                                      input(type='hidden', name='amount', value='60.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products6.html')
+                                    img(src='images/p4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products6.html') Gift Card
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $22
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Gift Card')
+                                      input(type='hidden', name='amount', value='22.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                        #decor.tab-pane.fade(role='tabpanel', aria-labelledby='decor-tab')
+                          .tabcontent-grids
+                            script.
+                              $(document).ready(function() {
+                              $("#owl-demo3").owlCarousel({
+                              autoPlay: 3000, //Set AutoPlay to 3 seconds
+                              items :4,
+                              itemsDesktop : [640,5],
+                              itemsDesktopSmall : [414,4],
+                              navigation : true
+                              });
+                              });
+                            #owl-demo3.owl-carousel
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 Sale
+                                  a(href='products3.html')
+                                    img(src='images/h1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products3.html') Wall Clock
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $80
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Wall Clock')
+                                      input(type='hidden', name='amount', value='80.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6
+                                      | 10%
+                                      br
+                                      | Off
+                                  a(href='products3.html')
+                                    img(src='images/h2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products3.html') Plants & Vases
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $40
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Plants & Vases')
+                                      input(type='hidden', name='amount', value='40.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products3.html')
+                                    img(src='images/h3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products3.html') Queen Size Bed
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $250
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Queen Size Bed')
+                                      input(type='hidden', name='amount', value='250.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products3.html')
+                                    img(src='images/h4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products3.html') flower pot
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $30
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='flower pot')
+                                      input(type='hidden', name='amount', value='30.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 Sale
+                                  a(href='products3.html')
+                                    img(src='images/h1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products3.html') Wall Clock
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $80
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Wall Clock')
+                                      input(type='hidden', name='amount', value='80.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6
+                                      | 10%
+                                      br
+                                      | Off
+                                  a(href='products3.html')
+                                    img(src='images/h2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products3.html') Plants & Vases
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $40
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Plants & Vases')
+                                      input(type='hidden', name='amount', value='40.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products3.html')
+                                    img(src='images/h3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products3.html') Queen Size Bed
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $250
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Queen Size Bed')
+                                      input(type='hidden', name='amount', value='250.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products3.html')
+                                    img(src='images/h4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products3.html') flower pot
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $30
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='flower pot')
+                                      input(type='hidden', name='amount', value='30.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                        #sports.tab-pane.fade(role='tabpanel', aria-labelledby='sports-tab')
+                          .tabcontent-grids
+                            script.
+                              $(document).ready(function() {
+                              $("#owl-demo4").owlCarousel({
+                              autoPlay: 3000, //Set AutoPlay to 3 seconds
+                              items :4,
+                              itemsDesktop : [640,5],
+                              itemsDesktopSmall : [414,4],
+                              navigation : true
+                              });
+                              });
+                            #owl-demo4.owl-carousel
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 New
+                                  a(href='products4.html')
+                                    img(src='images/s1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products4.html') Roller Skates
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $180
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Roller Skates')
+                                      input(type='hidden', name='amount', value='180.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products4.html')
+                                    img(src='images/s2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products4.html') Football
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $70
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Football')
+                                      input(type='hidden', name='amount', value='70.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6
+                                      | 20% 
+                                      br
+                                      | Off
+                                  a(href='products4.html')
+                                    img(src='images/s3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products4.html') Nylon Shuttle
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $56
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Nylon Shuttle')
+                                      input(type='hidden', name='amount', value='56.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products4.html')
+                                    img(src='images/s4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products4.html') Cricket Kit
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $80
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Cricket Kit')
+                                      input(type='hidden', name='amount', value='80.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6 New
+                                  a(href='products4.html')
+                                    img(src='images/s1.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products4.html') Roller Skates
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $180
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Roller Skates')
+                                      input(type='hidden', name='amount', value='180.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products4.html')
+                                    img(src='images/s2.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products4.html') Football
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $70
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Football')
+                                      input(type='hidden', name='amount', value='70.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  .new-tag
+                                    h6
+                                      | 20% 
+                                      br
+                                      | Off
+                                  a(href='products4.html')
+                                    img(src='images/s3.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products4.html') Nylon Shuttle
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $56
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Nylon Shuttle')
+                                      input(type='hidden', name='amount', value='56.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+                              .item
+                                .glry-w3agile-grids.agileits
+                                  a(href='products4.html')
+                                    img(src='images/s4.png', alt='img')
+                                  .view-caption.agileits-w3layouts
+                                    h4
+                                      a(href='products4.html') Cricket Kit
+                                    p Lorem ipsum dolor sit amet consectetur
+                                    h5 $80
+                                    form(action='#', method='post')
+                                      input(type='hidden', name='cmd', value='_cart')
+                                      input(type='hidden', name='add', value='1')
+                                      input(type='hidden', name='w3ls_item', value='Cricket Kit')
+                                      input(type='hidden', name='amount', value='80.00')
+                                      button.w3ls-cart(type='submit')
+                                        i.fa.fa-cart-plus(aria-hidden='true')
+                                        |  Add to cart
+              // //welcome
+              // add-products
+              .add-products
+                .container
+                  .add-products-row
+                    .w3ls-add-grids
+                      a(href='products1.html')
+                        h4
+                          | TOP 10 TRENDS FOR YOU FLAT 
+                          span 20%
+                          |  OFF
+                        h6
+                          | Shop now 
+                          i.fa.fa-arrow-circle-right(aria-hidden='true')
+                    .w3ls-add-grids.w3ls-add-grids-mdl
+                      a(href='products1.html')
+                        h4
+                          | SUNDAY SPECIAL DISCOUNT FLAT 
+                          span 40%
+                          |  OFF
+                        h6
+                          | Shop now 
+                          i.fa.fa-arrow-circle-right(aria-hidden='true')
+                    .w3ls-add-grids.w3ls-add-grids-mdl1
+                      a(href='products.html')
+                        h4
+                          | LATEST DESIGNS FOR YOU 
+                          span  Hurry !
+                        h6
+                          | Shop now 
+                          i.fa.fa-arrow-circle-right(aria-hidden='true')
+                    .clerfix  
+              // //add-products
+              // coming soon
+              .soon
+                .container
+                  h3 Mega Deal Of the Week
+                  h4 Coming Soon Don't Miss Out
+                  #countdown1.ClassyCountdownDemo
+              // //coming soon
+              // deals
+              .deals
+                .container
+                  h3.w3ls-title DEALS OF THE DAY 
+                  .deals-row
+                    .col-md-3.focus-grid
+                      a.wthree-btn(href='products.html')
+                        .focus-image
+                          i.fa.fa-mobile
+                        h4.clrchg Mobiles
+                    .col-md-3.focus-grid
+                      a.wthree-btn.wthree1(href='products.html')
+                        .focus-image
+                          i.fa.fa-laptop
+                        h4.clrchg  Electronics & Appliances
+                    .col-md-3.focus-grid
+                      a.wthree-btn.wthree2(href='products4.html')
+                        .focus-image
+                          i.fa.fa-wheelchair
+                        h4.clrchg Furnitures
+                    .col-md-3.focus-grid
+                      a.wthree-btn.wthree3(href='products3.html')
+                        .focus-image
+                          i.fa.fa-home
+                        h4.clrchg Home Decor
+                    .col-md-2.focus-grid.w3focus-grid-mdl
+                      a.wthree-btn.wthree3(href='products9.html')
+                        .focus-image
+                          i.fa.fa-book
+                        h4.clrchg Books & Music
+                    .col-md-2.focus-grid.w3focus-grid-mdl
+                      a.wthree-btn.wthree4(href='products1.html')
+                        .focus-image
+                          i.fa.fa-asterisk
+                        h4.clrchg Fashion
+                    .col-md-2.focus-grid.w3focus-grid-mdl
+                      a.wthree-btn.wthree2(href='products2.html')
+                        .focus-image
+                          i.fa.fa-gamepad
+                        h4.clrchg Kids
+                    .col-md-2.focus-grid.w3focus-grid-mdl
+                      a.wthree-btn.wthree(href='products5.html')
+                        .focus-image
+                          i.fa.fa-shopping-basket
+                        h4.clrchg Groceries
+                    .col-md-2.focus-grid.w3focus-grid-mdl
+                      a.wthree-btn.wthree5(href='products7.html')
+                        .focus-image
+                          i.fa.fa-medkit
+                        h4.clrchg Health
+                    .col-md-2.focus-grid.w3focus-grid-mdl
+                      a.wthree-btn.wthree1(href='products8.html')
+                        .focus-image
+                          i.fa.fa-car
+                        h4.clrchg Automotive
+                    .col-md-3.focus-grid
+                      a.wthree-btn.wthree2(href='products5.html')
+                        .focus-image
+                          i.fa.fa-cutlery
+                        h4.clrchg Food
+                    .col-md-3.focus-grid
+                      a.wthree-btn.wthree5(href='products4.html')
+                        .focus-image
+                          i.fa.fa-futbol-o
+                        h4.clrchg Sports
+                    .col-md-3.focus-grid
+                      a.wthree-btn.wthree3(href='products2.html')
+                        .focus-image
+                          i.fa.fa-gamepad
+                        h4.clrchg Games & Toys
+                    .col-md-3.focus-grid
+                      a.wthree-btn(href='products6.html')
+                        .focus-image
+                          i.fa.fa-gift
+                        h4.clrchg Gifts
+                    .clearfix  
+              // //deals
+              // footer-top
+              .w3agile-ftr-top
+                .container
+                  .ftr-toprow
+                    .col-md-4.ftr-top-grids
+                      .ftr-top-left
+                        i.fa.fa-truck(aria-hidden='true')
+                      .ftr-top-right
+                        h4 FREE DELIVERY
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac 
+                      .clearfix  
+                    .col-md-4.ftr-top-grids
+                      .ftr-top-left
+                        i.fa.fa-user(aria-hidden='true')
+                      .ftr-top-right
+                        h4 CUSTOMER CARE
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac 
+                      .clearfix  
+                    .col-md-4.ftr-top-grids
+                      .ftr-top-left
+                        i.fa.fa-thumbs-o-up(aria-hidden='true')
+                      .ftr-top-right
+                        h4 GOOD QUALITY
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempus justo ac 
+                      .clearfix  
+                    .clearfix  
+              // //footer-top
+              // subscribe
+              .subscribe
+                .container
+                  .col-md-6.social-icons.w3-agile-icons
+                    h4 Keep in touch
+                    ul
+                      li
+                        a.fa.fa-facebook.icon.facebook(href='#')  
+                      li
+                        a.fa.fa-twitter.icon.twitter(href='#')  
+                      li
+                        a.fa.fa-google-plus.icon.googleplus(href='#')  
+                      li
+                        a.fa.fa-dribbble.icon.dribbble(href='#')  
+                      li
+                        a.fa.fa-rss.icon.rss(href='#')  
+                    ul.apps
+                      li
+                        h4 Download Our app : 
+                      li
+                        a.fa.fa-apple(href='#')
+                      li
+                        a.fa.fa-windows(href='#')
+                      li
+                        a.fa.fa-android(href='#')
+                  .col-md-6.subscribe-right
+                    h4 Sign up for email and get 25%off!
+                    form(action='#', method='post')
+                      input(type='text', name='email', placeholder='Enter your Email...', required='')
+                      input(type='submit', value='Subscribe')
+                    .clearfix  
+                  .clearfix  
+              // //subscribe
+              // footer
+              .footer
+                .container
+                  .footer-info.w3-agileits-info
+                    .col-md-4.address-left.agileinfo
+                      .footer-logo.header-logo
+                        h2
+                          a(href='index')
+                            span S
+                            | mart 
+                            i Bazaar
+                        h6 Your stores. Your place.
+                      ul
+                        li
+                          i.fa.fa-map-marker
+                          |  123 San Sebastian, New York City USA.
+                        li
+                          i.fa.fa-mobile
+                          |  333 222 3333
+                        li
+                          i.fa.fa-phone
+                          |  +222 11 4444
+                        li
+                          i.fa.fa-envelope-o
+                          a(href='mailto:example@mail.com')  mail@example.com
+                    .col-md-8.address-right
+                      .col-md-4.footer-grids
+                        h3 Company
+                        ul
+                          li
+                            a(href='about.html') About Us
+                          li
+                            a(href='marketplace.html') Marketplace
+                          li
+                            a(href='values.html') Core Values
+                          li
+                            a(href='privacy.html') Privacy Policy
+                      .col-md-4.footer-grids
+                        h3 Services
+                        ul
+                          li
+                            a(href='contact.html') Contact Us
+                          li
+                            a(href='login.html') Returns
+                          li
+                            a(href='faq.html') FAQ
+                          li
+                            a(href='sitemap.html') Site Map
+                          li
+                            a(href='login.html') Order Status
+                      .col-md-4.footer-grids
+                        h3 Payment Methods
+                        ul
+                          li
+                            i.fa.fa-laptop(aria-hidden='true')
+                            |  Net Banking
+                          li
+                            i.fa.fa-money(aria-hidden='true')
+                            |  Cash On Delivery
+                          li
+                            i.fa.fa-pie-chart(aria-hidden='true')
+                            | EMI Conversion
+                          li
+                            i.fa.fa-gift(aria-hidden='true')
+                            |  E-Gift Voucher
+                          li
+                            i.fa.fa-credit-card(aria-hidden='true')
+                            |  Debit/Credit Card
+                      .clearfix
+                    .clearfix
+              // //footer
+              .copy-right
+                .container
+                  p
+                    | © 2016 Smart bazaar . All rights reserved | Design by 
+                    a(href='http://w3layouts.com')  W3layouts.
+              // cart-js
+              script(src='javascripts/minicart.js')
+              script.
+                w3ls.render();
+                w3ls.cart.on('w3sb_checkout', function (evt) {
+                var items, len, i;
+                if (this.subtotal() > 0) {
+                items = this.items();
+                for (i = 0, len = items.length; i < len; i++) {
+                items[i].set('shipping', 0);
+                items[i].set('shipping2', 0);
+                }
+                }
+                });
+              // //cart-js
+              // countdown.js
+              script(src='javascripts/jquery.knob.js')
+              script(src='javascripts/jquery.throttle.js')
+              script(src='javascripts/jquery.classycountdown.js')
+              script.
+                $(document).ready(function() {
+                $('#countdown1').ClassyCountdown({
+                end: '1388268325',
+                now: '1387999995',
+                labels: true,
+                style: {
+                element: "",
+                textResponsive: .5,
+                days: {
+                gauge: {
+                thickness: .10,
+                bgColor: "rgba(0,0,0,0)",
+                fgColor: "#1abc9c",
+                lineCap: 'round'
+                },
+                textCSS: 'font-weight:300; color:#fff;'
+                },
+                hours: {
+                gauge: {
+                thickness: .10,
+                bgColor: "rgba(0,0,0,0)",
+                fgColor: "#05BEF6",
+                lineCap: 'round'
+                },
+                textCSS: ' font-weight:300; color:#fff;'
+                },
+                minutes: {
+                gauge: {
+                thickness: .10,
+                bgColor: "rgba(0,0,0,0)",
+                fgColor: "#8e44ad",
+                lineCap: 'round'
+                },
+                textCSS: ' font-weight:300; color:#fff;'
+                },
+                seconds: {
+                gauge: {
+                thickness: .10,
+                bgColor: "rgba(0,0,0,0)",
+                fgColor: "#f39c12",
+                lineCap: 'round'
+                },
+                textCSS: ' font-weight:300; color:#fff;'
+                }
+                },
+                onEndCallback: function() {
+                console.log("Time out!");
+                }
+                });
+                });
+              // //countdown.js
+              // menu js aim
+              script(src='javascripts/jquery.menu-aim.js')
+              script(src='javascripts/main.js')
+              // Resource jQuery
+              // //menu js aim
+              //
+                Bootstrap core JavaScript
+                ==================================================
+              // Placed at the end of the document so the pages load faster
